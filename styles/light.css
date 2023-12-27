@@ -5,10 +5,12 @@
   --accent-color: #FF0070;
   --h3-color: #353430;
   --hb-color: #ff8dcb;
+  --bg-color: #FFF1F7;
   background: url(../images/cover-image-light.png) no-repeat center / cover;
   background-attachment: fixed;
+  
 }
 
-.page.theme_light .rec { 
+.page.theme_light .rec {
   display: none
 }
