@@ -12,6 +12,12 @@
   padding: var(--padding-mobile);
 }
 
+@media (width >= 768px) {
+  .header {
+    padding: var(--padding-desktop);
+  }
+}
+
 .header__theme-menu {
   justify-self: end;
   align-self: center;
@@ -19,8 +25,19 @@
  
 .header__theme-menu-list {
   display: grid;
-  justify-content: center;
   gap: 10px;
+}
+
+@media (width > 768px) {
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+
+  .header__theme-menu-list {
+    display: grid;
+    grid-template-columns: min-content min-content min-content;
+  }
 }
 
 .header__theme-menu-button {
@@ -31,6 +48,7 @@
   text-transform: lowercase;
   font-size: var(--font-size);
   padding: 0 13px;
+  line-height: 100%;
 }
 
 .header__theme-menu-button:hover {
