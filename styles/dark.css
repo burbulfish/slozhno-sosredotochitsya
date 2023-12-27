@@ -9,11 +9,12 @@
   background-attachment: fixed;
 }
 
- .rec{
-  
+ .rec {
   position: absolute;
-  top: 2px;
-  right: 25px;
+  top: var(--padding-mobile);
+  right: calc(var(--padding-mobile) + var(--decoration-element) + 3px);
+  font-family: var(--main-font), sans-serif;
+  line-height: 25px;
 }
 
 .rec::before {
@@ -26,8 +27,8 @@
 .rec::after {
   content: '';
   display: inline-block;
-  width: 5px;
-  height: 5px;
+  width: 8px;
+  height: 8px;
   border: 1px solid var(--h3-color);
   border-radius: 50%;
   background: var(--h3-color);
@@ -36,3 +37,11 @@
   position: absolute;
   top: 9px
 }
+
+@media (width >= 768px) {
+  .rec {
+    right: calc(var(--padding-desktop) + var(--decoration-element) + 3px);
+    top: var(--padding-desktop)
+  }
+}
+
