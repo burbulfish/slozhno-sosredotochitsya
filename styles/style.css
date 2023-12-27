@@ -162,7 +162,7 @@
     padding-inline: var(--padding-mobile);
   }
 
-  .section__block:nth-child(n+1) {
+  .section__block:nth-child(n+2) {
     margin-block-start: 50px;
   }
   
@@ -171,7 +171,7 @@
       padding-inline: var(--padding-desktop);
     }
   
-    .section__block:nth-child(n+1) {
+    .section__block:nth-child(n+2) {
       margin-block-start: 80px;
     }
 
@@ -190,7 +190,7 @@
     }
     .section__block:nth-child(3) {
       grid-template-columns: 1fr 2fr;
-      grid-template-rows: repeat(3, minmax(min-content, max-content));
+      grid-template-rows: repeat(2, minmax(min-content, max-content));
     }
     
 
