@@ -181,13 +181,17 @@
 
     .section__block:nth-child(2) {
     grid-template-rows: min-content 1fr;
+    grid-template-columns: 1fr 2fr;
     }
-  
+
+    
     .section__block:nth-child(2) .section__list {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px
+      gap: 20px;
+      grid-column: 2;
     }
+
     .section__block:nth-child(3) {
       grid-template-columns: 1fr 2fr;
       grid-template-rows: repeat(2, minmax(min-content, max-content));
