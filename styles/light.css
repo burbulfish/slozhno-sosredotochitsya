@@ -1,14 +1,13 @@
 .page.theme_light {
   --text-color: #353430;
   --h4-color: #353430;
-  --h1-color: #FFC2E6;
+  --header-title--color: #FFC2E6;
   --accent-color: #FF0070;
-  --h3-color: #353430;
+  --section-color: #353430;
   --hb-color: #ff8dcb;
   --bg-color: #FFF1F7;
-  background: url(../images/cover-image-light.png) no-repeat center / cover;
-  background-attachment: fixed;
-  
+  --hover-color: #35343080;
+  --background-image:url(../images/cover-image-light.png);
 }
 
 .page.theme_light .rec {
