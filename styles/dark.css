@@ -1,48 +1,29 @@
 .page.theme_dark {
   --bg-color: #000028;
-  --text-color: #F1B2CE;
+  --text-color: #f1b2ce;
   --paragraph-color: #000028;
-  --header-title--color: #DB00FF;
-  --accent-color: #FF0070;
+  --header-title--color: #db00ff;
+  --accent-color: #ff0070;
   --section-color: #ff0070;
   --hb-color: #ff0070;
   --hover-color: #ff007080;
   --background-image: url(../images/cover-image-dark.png);
 }
 
- .rec {
-  position: absolute;
-  top: var(--padding-mobile);
-  right: calc(var(--padding-mobile) + var(--decoration-element) + 3px);
-  font-family: var(--main-font), sans-serif;
-  line-height: 25px;
-}
-
-.rec::before {
-  content: 'rec';
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--section-color);
-  text-transform: uppercase;
-}
-.rec::after {
-  content: '';
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  border: 1px solid var(--section-color);
-  border-radius: 50%;
-  background: var(--section-color);
-  box-shadow: 0 0 4px 4px var(--section-color);
-  margin-left: 10px;
-  position: absolute;
-  top: 9px
-}
-
-@media (width >= 768px) {
-  .rec {
-    right: calc(var(--padding-desktop) + var(--decoration-element) + 3px);
-    top: var(--padding-desktop)
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000028;
+    --text-color: #f1b2ce;
+    --paragraph-color: #000028;
+    --header-title--color: #db00ff;
+    --accent-color: #ff0070;
+    --section-color: #ff0070;
+    --hb-color: #ff0070;
+    --hover-color: #ff007080;
+    --background-image: url(../images/cover-image-dark.png);
   }
 }
 
+.theme_dark .rec {
+  display: block;
+}
