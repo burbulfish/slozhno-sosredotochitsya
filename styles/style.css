@@ -99,7 +99,7 @@
   box-shadow: 0 0 4px 4px var(--section-color);
   position: absolute;
   top: 9px;
-  right: -19px 
+  right: -19px;
 }
 
 @media (width >= 768px) {
@@ -289,7 +289,7 @@
   .section__block.goldfish {
     row-gap: 20px;
     column-gap: 10px;
-  }  
+  }
 }
 
 .section__list {
